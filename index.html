@@ -24,17 +24,17 @@
   <div id="Daily" class="tabcontent container-fluid">
       <div class="row">
         <div class="col-sm-4">
-          <form>
+          <form class="was-validated">
             <div class="form-group">
               <label for="inputDate">Введите дату:</label>
-              <input type="date" class="form-control">
+              <input type="date" class="form-control" required>
 
-              <label for="inputTime">Введите сколько часов:</label>
-              <input type="time" class="form-control">
+              <label for="Number_of_participants">Количество часов:</label>
+              <input type="text" class="form-control" required>
 
               <label for="subject">Выберете тему:</label>
-                <select id="subject" name="subject">
-                  <option value="not_selected">Не выбранно</option>
+                <select id="subject" name="subject" required>
+                  <option value="not_selected" >Не выбранно</option>
                   <option value="Anglish">Английский язык</option>
                   <option value="other">Другие тренинги</option>
                   <option value="monitoring">Мониторинг офисов продаж</option>
@@ -68,7 +68,7 @@
           <textarea class="form-control" rows="5" id="comment_aud" name="text"></textarea>
 
           <label for="Number_of_participants">Количество участников:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" required>
 
           <label for="region">Регион:</label>
           <select id="region" name="region">
@@ -84,38 +84,39 @@
         <div class="col-sm-4">
           <label for="region">Тренер:</label>
           <select id="region" name="region">
-            <option value="australia">Не выбранно</option>
-            <option value="australia">Мадина</option>
-            <option value="canada">Малика</option>
-            <option value="usa">Амир</option>
-            <option value="usa">Ансор</option>
-            <option value="usa">Замира</option>
-            <option value="usa">Фируз</option>
-            <option value="usa">Максуда</option>
-            <option value="usa">Умед</option>
-            <option value="usa">Хусравшо</option>
-            <option value="usa">Гульмира</option>
-            <option value="usa">Нигора</option>
+            <option value="not_selected">Не выбранно</option>
+            <option value="Madina">Мадина</option>
+            <option value="Malika">Малика</option>
+            <option value="Amir">Амир</option>
+            <option value="Ansor">Ансор</option>
+            <option value="Zamira">Замира</option>
+            <option value="Firuz">Фируз</option>
+            <option value="Maqsuda">Максуда</option>
+            <option value="Umed">Умед</option>
+            <option value="Husravsho">Хусравшо</option>
+            <option value="Gulmira">Гульмира</option>
+            <option value="Nigora">Нигора</option>
           </select>
 
           <label for="region">Напарник тренера:</label>
           <select id="region" name="region">
             <option value="australia">Не выбранно</option>
-            <option value="australia">Мадина</option>
-            <option value="canada">Малика</option>
-            <option value="usa">Амир</option>
-            <option value="usa">Ансор</option>
-            <option value="usa">Замира</option>
-            <option value="usa">Фируз</option>
-            <option value="usa">Максуда</option>
-            <option value="usa">Умед</option>
-            <option value="usa">Хусравшо</option>
-            <option value="usa">Гульмира</option>
-            <option value="usa">Нигора</option>
+            <option value="Madina">Мадина</option>
+            <option value="Malika">Малика</option>
+            <option value="Amir">Амир</option>
+            <option value="Ansor">Ансор</option>
+            <option value="Zamira">Замира</option>
+            <option value="Firuz">Фируз</option>
+            <option value="Maqsuda">Максуда</option>
+            <option value="Umed">Умед</option>
+            <option value="Husravsho">Хусравшо</option>
+            <option value="Gulmira">Гульмира</option>
+            <option value="Nigora">Нигора</option>
           </select>
 
         </div>
       </div> 
+      <button type="submit" class="btn btn-primary">Submit</button>
   </div> 
   <div id="Training" class="tabcontent">
     <h3>Training</h3>
