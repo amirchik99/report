@@ -12,6 +12,7 @@
   <script src="https://bootstraptema.ru/_sf/3/393.js"></script>
   <script src="/js/main.js"></script>
   <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -21,19 +22,19 @@
     <button class="tablinks" onclick="openCity(event, 'Report')">Report</button>
   </div>
 
-  <div id="Daily" class="tabcontent container-fluid">
+  <div id="Daily" class="tabcontent container">
       <div class="row">
         <div class="col-sm-4">
-          <form class="was-validated">
+          
             <div class="form-group">
-              <label for="inputDate">Введите дату:</label>
-              <input type="date" class="form-control" required>
+              <label for="inputDate" class="lab_form">Введите дату:</label>
+              <input type="date" class="form-control">
 
-              <label for="Number_of_participants">Количество часов:</label>
-              <input type="text" class="form-control" required>
+              <label for="Number_of_participants" class="lab_form">Количество часов:</label>
+              <input type="text" class="form-control">
 
-              <label for="subject">Выберете тему:</label>
-                <select id="subject" name="subject" required>
+              <label for="subject" class="lab_form">Выберете тему:</label>
+                <select id="subject" name="subject">
                   <option value="not_selected" >Не выбранно</option>
                   <option value="Anglish">Английский язык</option>
                   <option value="other">Другие тренинги</option>
@@ -45,44 +46,48 @@
                   <option value="Functional">Функциональные тренинги</option>
                 </select>
 
-              <label for="comment">Коментарии к теме:</label>
+              <label for="comment" class="lab_form">Коментарии к теме:</label>
               <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
             </div>
-          </form>
+          
         </div>
         <div class="col-sm-4">
-          <label for="аudience">Аудитория:</label>
-          <select id="аudience" name="аudience">
-            <option value="not_selected">Не выбранно</option>
-            <option value="teznet">TezNet</option>
-            <option value="external">Внешние слушатели</option>
-            <option value="consultants_iss">Консультанты ИСС</option>
-            <option value="sellers_consultants">Продовцы консультанты ЦО</option>
-            <option value="leaders">Руководители</option>
-            <option value="employees">Сотрудники компании</option>
-            <option value="interns_iss">Стажеры ИСС</option>
-            <option value="interns_co">Стажеры ЦО</option>
-          </select>
+          
+            <div class="form-group">
+              <label for="аudience" class="lab_form">Аудитория:</label>
+              <select id="аudience" name="аudience">
+                <option value="not_selected">Не выбранно</option>
+                <option value="teznet">TezNet</option>
+                <option value="external">Внешние слушатели</option>
+                <option value="consultants_iss">Консультанты ИСС</option>
+                <option value="sellers_consultants">Продовцы консультанты ЦО</option>
+                <option value="leaders">Руководители</option>
+                <option value="employees">Сотрудники компании</option>
+                <option value="interns_iss">Стажеры ИСС</option>
+                <option value="interns_co">Стажеры ЦО</option>
+              </select>
 
-          <label for="comment_aud">Коментарии к аудитории:</label>
-          <textarea class="form-control" rows="5" id="comment_aud" name="text"></textarea>
+              <label for="comment_aud" class="lab_form">Коментарии к аудитории:</label>
+              <textarea class="form-control" rows="5" id="comment_aud" name="text"></textarea>
 
-          <label for="Number_of_participants">Количество участников:</label>
-          <input type="text" class="form-control" required>
+              <label for="Number_of_participants" class="lab_form">Количество участников:</label>
+              <input type="text" class="form-control">
 
-          <label for="region">Регион:</label>
-          <select id="region" name="region">
-            <option value="not_selected">Не выбранно</option>
-            <option value="dushanbe">Душанбе</option>
-            <option value="rrp">РРП</option>
-            <option value="sogd">Согд</option>
-            <option value="bohtar">Бохтар</option>
-            <option value="kulob">Куляб</option>
-            <option value="gbao">ГБАО</option>
-          </select>
+              <label for="region" class="lab_form">Регион:</label>
+              <select id="region" name="region">
+                <option value="not_selected">Не выбранно</option>
+                <option value="dushanbe">Душанбе</option>
+                <option value="rrp">РРП</option>
+                <option value="sogd">Согд</option>
+                <option value="bohtar">Бохтар</option>
+                <option value="kulob">Куляб</option>
+                <option value="gbao">ГБАО</option>
+              </select>
+            </div> 
+            
         </div>
         <div class="col-sm-4">
-          <label for="region">Тренер:</label>
+          <label for="region" class="lab_form">Тренер:</label>
           <select id="region" name="region">
             <option value="not_selected">Не выбранно</option>
             <option value="Madina">Мадина</option>
@@ -98,7 +103,7 @@
             <option value="Nigora">Нигора</option>
           </select>
 
-          <label for="region">Напарник тренера:</label>
+          <label for="region" class="lab_form">Напарник тренера:</label>
           <select id="region" name="region">
             <option value="australia">Не выбранно</option>
             <option value="Madina">Мадина</option>
@@ -113,10 +118,18 @@
             <option value="Gulmira">Гульмира</option>
             <option value="Nigora">Нигора</option>
           </select>
-
+          <label class="form-check-label check_nt">
+            <input class="form-check-input" type="checkbox" name="remember"> Не менять текст
+          </label>
+        </br>
+          <input type="file" class="form-control-file btn_add" id="exampleFormControlFile1">
+          <button type="submit" class="btn  btn-block button_add"id="">Добавить</button>
+          <button type="submit" class="btn btn-block button_add">Отменить последнее </button>
+          
+          
         </div>
       </div> 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      
   </div> 
   <div id="Training" class="tabcontent">
     <h3>Training</h3>
